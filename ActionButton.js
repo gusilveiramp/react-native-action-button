@@ -180,6 +180,7 @@ export default class ActionButton extends Component {
     const parentStyle = isAndroid &&
       this.props.fixNativeFeedbackRadius
       ? {
+          left: this.props.offsetX,
           right: this.props.offsetX,
           zIndex: this.props.zIndex,
           borderRadius: this.props.size / 2,
